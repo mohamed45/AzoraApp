@@ -1,0 +1,25 @@
+.nav-header {
+    background-color: #282c34;
+    padding: 10px;
+    color: white;
+    text-align: center;
+  }
+  
+  .nav-header nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .navBtn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .navBtn:hover {
+    text-decoration: underline;
+  }
+  
