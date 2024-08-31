@@ -6,6 +6,8 @@ const usersRoutes =require('./routes/users-routes');
 const HttpError = require("./models/http-error");
 require('dotenv').config();
 
+const url=process.env.MONGODB_URI;
+
 const app = express();
 
 app.use(bodyParser.json());
@@ -35,7 +37,6 @@ app.use((error, req, res, next) => {
   res.json({ message: error.message || 'An unknown error occurred!' });
 });
 
-const url=process.env.MONGODB_URI;
 
 mongoose
   .connect(url)
